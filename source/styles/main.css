@@ -1,0 +1,256 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url(../img/background-image.png);
+}
+
+.soulshop {
+  font-family: "Bungee", sans-serif;
+}
+
+.navbar-brand {
+  margin: 0;
+  font-family: "Bungee", sans-serif;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #000;
+}
+
+header .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.footer-container p {
+  color: #fff;
+}
+
+header .nav .nav-link:hover {
+  color: #cbc6c6;
+}
+
+header .nav .nav-link.active {
+  background-color: #fff;
+  color: #000;
+}
+
+header .nav .nav-link.active:hover {
+  background-color: #cbc6c6;
+  color: #fff;
+}
+
+.navbar-toggler {
+  background-color: #cbc6c6;
+}
+
+/* Seção principal - home */
+
+.home {
+  background-color: #767676;
+}
+
+.homebar {
+  list-style: none;
+  display: flex;
+}
+
+.homebar li {
+  margin-right: 20px;
+}
+
+.homebar li a {
+  text-decoration: none;
+  color: #000;
+  padding: 8px 16px;
+  border: 1px solid #cbc6c6;
+  background-color: #fff;
+  border-radius: 4px;
+} 
+
+.homebar li a:hover {
+  background-color: #cbc6c6;
+  color: #fff;
+}
+
+.container {
+  position: relative;
+}
+
+.table-content {
+  background-color: #333;
+  color: #fff;
+  padding: 16px;
+}
+
+.table-about-content {
+  background-color: #333;
+  color: #fff;
+  padding: 16px;
+  position: absolute;
+  top: -26px;
+}
+
+.table-about-content span {
+  font-family: "Bungee";
+  color: rgb(101, 101, 240);
+  font-style: italic;
+}
+
+.table-content span {
+  font-family: "Bungee";
+  color: rgb(101, 101, 240);
+  font-style: italic;
+}
+
+/* Seção de novidades */
+
+.product {
+  padding: 0 30px;
+  background-color: #fff;
+  margin: 0 6px;
+}
+
+.product__item {
+  font-size: 16px;
+}
+
+.product__price {
+  color: #00838f;
+  font-weight: bold;
+}
+
+.product__button {
+  border: none;
+  padding: 8px 16px;
+  background-color: #ccc;
+  color: #666;
+  transition: all ease .3s;
+}
+
+.product__button:hover {
+  background-color: #ca1f10;
+  color: #fff;
+}
+
+/* Seção de produtos */
+
+.nav__product .nav-link.active,
+.form-container button {
+  background-color: rgb(101, 101, 240);
+  color: #fff;
+}
+
+.nav__product .nav-link.active:hover {
+  background-color: rgb(88, 88, 240);
+}
+
+.nav__product .nav-link {
+  color: rgb(101, 101, 240);
+}
+
+/* Seção de contato */
+
+.contact {
+  background-color: #767676;
+}
+
+.form-container {
+  max-width: 540px;
+  border: 2px solid #000;
+  border-radius: 6px;
+  padding: 36px;
+  background-color: #fff;
+}
+
+.contact h3 {
+  font-family: "bungee", sans-serif;
+  color: #fff;
+  font-style: italic;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+
+.social-links li a {
+  text-decoration: none;
+  color: rgb(84, 84, 226);
+}
+
+.social-links li a:hover {
+  color: rgb(57, 57, 231);
+}
+
+.form-container {
+  display: grid;
+  margin-left: 48px;
+}
+
+.form-container button {
+  border: none;
+  padding: 8px 32px;
+  justify-self: end;
+  transition: all ease .3s;
+}
+
+.form-container button:hover {
+  background-color: rgb(57, 57, 231);
+}
+
+/* Footer da página */
+
+.form-container textarea {
+  resize: none;
+}
+
+.footer-container {
+  background-color: #000;
+}
+
+@media (max-width: 767px) {
+
+  .product {
+    padding: 0 100px;
+    background-color: #fff;
+    margin: 10px 6px;
+    max-width: 360px;
+  }
+  #shop .product img{
+    padding: 0 44px;
+  }
+
+  #shop .product {
+    max-width: 320px;
+  }
+
+  .footer-container {
+    padding: 0 18px;
+    text-align: center;
+  }
+
+  .form-container {
+    width: 354px;
+    margin-left: 0px;
+  }
+
+  .nossos-links {
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tab-content .product {
+    width: 240px;
+  }
+  .form-container {
+    margin-left: 0;
+    width: 424px;
+  }
+  .nossos-links {
+    text-align: center;
+  }
+}
